@@ -1,0 +1,31 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Skaya backend application",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo '🚀 Starting backend in PRODUCTION mode' && npm run build && node server.js",
+    "dev": "echo '🔧 Running backend in DEVELOPMENT mode' && cross-env NODE_ENV=development webpack serve --mode development",
+    "stage": "echo '🛠️ Running backend in STAGING mode' && cross-env NODE_ENV=staging webpack --mode production",
+    "build": "echo '📦 Building backend assets' && webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skaya-labs/backend.git"
+  },
+  "keywords": [
+    "skaya",
+    "backend",
+    "expressjs"
+  ],
+  "author": "Skaya Labs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skaya-labs/backend/issues"
+  },
+  "homepage": "https://github.com/skaya-labs/backend#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
